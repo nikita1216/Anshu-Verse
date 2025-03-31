@@ -1,0 +1,48 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    margin-top: 50px;
+}
+
+/* Puzzle Grid */
+#puzzle-game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    margin: 20px auto;
+    width: 306px; /* 3x100px + gaps */
+    height: 306px;
+    position: relative;
+}
+
+/* Puzzle Pieces */
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    background-image: url('shivji.png');
+    background-size: 300px 300px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Setting individual background positions */
+.puzzle-piece:nth-child(1) { background-position: 0px 0px; }
+.puzzle-piece:nth-child(2) { background-position: -100px 0px; }
+.puzzle-piece:nth-child(3) { background-position: -200px 0px; }
+.puzzle-piece:nth-child(4) { background-position: 0px -100px; }
+.puzzle-piece:nth-child(5) { background-position: -100px -100px; }
+.puzzle-piece:nth-child(6) { background-position: -200px -100px; }
+.puzzle-piece:nth-child(7) { background-position: 0px -200px; }
+.puzzle-piece:nth-child(8) { background-position: -100px -200px; }
+.puzzle-piece:nth-child(9) { background-position: -200px -200px; }

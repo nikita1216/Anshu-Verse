@@ -1,0 +1,30 @@
+/* General Styling */ body { margin: 0; padding: 0; background: linear-gradient(135deg, #1e1e2f, #3a3a5f); color: #fff; font-family: 'Orbitron', sans-serif; text-align: center; }
+
+.container { max-width: 900px; margin: auto; padding: 20px; }
+
+/* Archives Title */ .title { font-size: 3rem; font-family: 'Pacifico', cursive; margin-top: 50px; color: #ffcc00; text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.6); }
+
+/* Subtitle */ .subtitle { font-size: 1.2rem; margin-bottom: 40px; opacity: 0.8; }
+
+/* Archive Sections */ .archive-section { margin-bottom: 40px; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px; box-shadow: 0px 5px 10px rgba(255, 204, 0, 0.3); }
+
+.archive-section h2 { font-size: 1.8rem; color: #ffcc00; }
+
+/* Moments Gallery */ .moments-gallery { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+
+.moment-image { width: 250px; height: auto; border-radius: 10px; box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2); transition: transform 0.3s; }
+
+.moment-image:hover { transform: scale(1.1); }
+
+/* Quotes Section */ #quote-display { font-size: 1.5rem; font-style: italic; margin: 20px 0; color: #ffcc00; }
+
+button { padding: 10px 20px; font-size: 1rem; background: #ffcc00; color: #1e1e2f; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
+
+button:hover { background: #d4a500; }
+
+/* Back to Home Link */ .back-link { display: inline-block; margin-top: 20px; padding: 10px 20px; color: #ffcc00; text-decoration: none; font-size: 1.2rem; border: 2px solid #ffcc00; border-radius: 5px; transition: background 0.3s, color 0.3s; }
+
+.back-link:hover { background: #ffcc00; color: #1e1e2f; }
+
+/* Image Width Fix */ .archive-section img { max-width: 100%; height: auto; }
+

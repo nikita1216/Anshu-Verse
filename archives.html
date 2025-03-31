@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archives | The Anshu-Verse</title>
+    <link rel="stylesheet" href="archives.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">The Archives</h1>
+        <p class="subtitle">Where memories, legends, and untold stories of Anshu reside.</p>
+
+        <<div class="archive-section" id="legendary-moments">
+            <h2>✨ Legendary Moments ✨</h2>
+            <div class="moments-gallery">
+                <img src="moment1.png" alt="Moment 1" class="moment-image">
+                <img src="moment2.png" alt="Moment 2" class="moment-image">
+                <img src="moment3.png" alt="Moment 3" class="moment-image">
+            </div>
+        </div>
+
+        <div class="archive-section" id="quotes">
+    <h2>🗨️ Quotes of the OG 🗨️</h2>
+    <p id="quote-display">"Loading wisdom..."</p>
+    <button onclick="generateQuote()">Get a Quote</button>
+</div>
+
+<script>
+    function generateQuote() {
+        const quotes = [
+            "✨ Mere Baba knows everything, but I’ll still argue with him like I know better.",
+            "🎨 If life is a blank canvas, I’m out here painting a masterpiece… or at least a very colorful mess.",
+            "🎮 Valorant isn’t just a game; it’s where I make strategic life decisions… like whether to clutch or blame lag.",
+            "💙 Flowers? Check. Late-night rants? Check. Making her feel special? Always.",
+            "😆 I fall asleep faster than she loses her temper… and that’s saying something.",
+            "📖 Overthinking is just pre-strategizing—until it turns into a 3 AM existential crisis.",
+            "💫 She thinks I send flowers to impress her. Joke’s on her—I just love seeing her smile."
+        ];
+        
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quote-display").textContent = quotes[randomIndex];
+    }
+</script>
+<script src="archives.js"></script>
+        <a href="index.html" class="back-link">⬅ Back to Home</a>
+    </div>
+</body>
+</html>

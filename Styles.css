@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+    background: linear-gradient(to right, #121212, #1a1a2e);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.glitch-container {
+    margin-top: 50px;
+}
+
+.glitch-text {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00fff7;
+    text-shadow: 0px 0px 8px rgba(0, 255, 247, 0.8);
+    animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff; }
+    50% { text-shadow: -2px -2px #ff00ff, 2px 2px #00ffff; }
+    100% { text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff; }
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #ff00ff;
+}
+
+.news-ticker {
+    margin: 20px auto;
+    width: 80%;
+    background: rgba(255, 0, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.portal-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.portal {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #00ffff, #121212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #00ffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portal:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px #ff00ff;
+}
